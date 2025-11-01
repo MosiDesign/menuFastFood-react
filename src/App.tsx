@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const menuItems = [
   {
@@ -116,8 +116,8 @@ const MenuSection = () => {
                 px-4 py-1.5 rounded-md capitalize font-medium transition-all duration-300 mx-2 my-1 cursor-pointer
                 ${
                   activeCategory === category
-                    ? 'bg-[#c59d5f] text-white shadow-xs shadow-black hover:outline-0 hover:border-0'
-                    : 'shadow-md shadow-black bg-[#F1F5F8] text-[#C59D5F] border border-amber-400 hover:bg-[#c59d5f] hover:text-white hover:border-[#c59d5f]' // 4b. استایل دکمه غیرفعال + هاور
+                    ? 'bg-[#c59d5f] text-white shadow-xs shadow-black'
+                    : 'shadow-md shadow-black bg-[#F1F5F8] text-[#C59D5F] border-amber-400 hover:bg-[#c59d5f] hover:text-white hover:border-[#c59d5f] outline-0 border-0'  
                 }
               `}
             >
