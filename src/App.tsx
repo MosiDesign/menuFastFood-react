@@ -85,7 +85,7 @@ const menuItems = [
 
 const categories = ['All', 'Breakfast', 'Lunch', 'Shakes', 'Dinner'];
 
-const MenuSection = () => {
+const App = () => {
   
   const [activeCategory, setActiveCategory] = useState('All');
 
@@ -166,4 +166,4 @@ const MenuSection = () => {
   );
 };
 
-export default MenuSection;
+export default App;
