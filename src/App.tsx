@@ -95,8 +95,11 @@ const MenuSection = () => {
     setActiveCategory(category);
   };
 
+  const isFiltered = activeCategory !== 'All';
+
   return (
-    <section className="bg-[#F1F5F8] py-20 px-8">
+    <div className={`bg-[#F1F5F8] py-20 px-8
+     ${isFiltered ? 'min-h-screen' : ''} `}>
       <div className="max-w-6xl mx-auto">
        
         <div className="text-center mb-8">
@@ -159,7 +162,7 @@ const MenuSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
